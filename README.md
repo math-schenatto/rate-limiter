@@ -1,8 +1,8 @@
-# Rate Limiter em Go 🚦
+# Rate Limiter em Go
 
 Este é um projeto de **Rate Limiter** construído em Go, utilizando Redis para armazenamento das métricas de requisição por IP e token. Ele bloqueia requisições quando o limite é excedido por um determinado tempo.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Limita requisições por **IP** e/ou **token** (API_KEY)
 - Usa **Redis** para controle de requisições com expiração automática
@@ -10,13 +10,13 @@ Este é um projeto de **Rate Limiter** construído em Go, utilizando Redis para 
 - Suporte a configuração via variáveis de ambiente
 - Middleware pronto para integrar com seu servidor HTTP
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - [Go](https://golang.org/)
 - [Redis](https://redis.io/)
 - [Docker + Docker Compose](https://docs.docker.com/compose/)
 
-## 📦 Como rodar o projeto
+## Como rodar o projeto
 
 ### 1. Clone o repositório
 
