@@ -24,7 +24,22 @@ Este é um projeto de **Rate Limiter** construído em Go, utilizando Redis para 
 git clone https://github.com/math-schenatto/rate-limiter.git
 cd rate-limiter
 ```
-## 2. Suba os containers
+
+## 2. Configuração do ambiente
+É possível mudar os parametros da execução através das variáveis de ambiente:
+- Configuração do número máximo de requisições permitidas por segundo.
+- Tempo de bloqueio do IP ou do Token
+
+O ambiente está inicialmente configurado como seguinte:
+```
+SERVER_PORT=8080
+RATE_LIMIT_IP=10
+RATE_LIMIT_TOKEN=100
+BLOCK_DURATION_SECONDS=300
+
+```
+
+## 3. Suba os containers
 
 ```
 docker compose up --build
